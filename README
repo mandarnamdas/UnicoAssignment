@@ -1,0 +1,25 @@
+Pre-requisites
+  •	Wildfly 8.2.0
+  •	Update the standalone.xml file to add below queue configuration under <jms-destinations> tag - 
+	  <jms-queue name="messageQueue">
+		  <entry name="java:/jms/queue/messageQueue"/>
+	  </jms-queue>
+
+Steps for execution - 
+  •	Build the application using Maven.
+  •	Deploy WAR under deployments folder of Wildfly application server.
+  •	Once deployed hit application URL http://<hostName>:8080/RestfulWSDemo/
+  •	Userwill be redirected to applications home page.
+  •	Home page will display two links viz. "Push to Queue" and "Show Queue Data" to User.
+  •	Click "Push to Queue" link to submit your data to queue.
+  •	Click "Show Queue Data" link to view the data added in your queue.
+
+Execute SOAP Web service
+  •	Deploy the SOAP service on Wildfly application server.
+  •	Hit wsdl URL http://<hostName>:8080/RestfulWSDemo/MySoapService?wsdl to check your SOAP service deployed correctly.
+  •	Test all the methods from SOAP service using Soap UI.
+  •	Click on "Show Queue Data" to check if messages are removed from queue after calculating GCD.
+
+Assumptions – 
+Assuming that the calculated GCD needs to be stored somewhere for further processing, I have used static list to 
+store GCD values. [I tried using “hsqldb” to store GCD values but couldn’t integrate it successfully]
