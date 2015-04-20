@@ -1,0 +1,3 @@
+/*C4*/SET SCHEMA PUBLIC
+CREATE TABLE IF NOT EXISTS GCD ( num1 integer, num2 integer, gcd integer)
+DISCONNECT
