@@ -1,4 +1,4 @@
-package com.nihilent.sender;
+package com.mycompany.sender;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;

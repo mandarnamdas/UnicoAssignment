@@ -1,4 +1,4 @@
-package com.nihilent.webservice;
+package com.mycompany.webservice;
 
 import java.net.URI;
 import java.util.List;
@@ -15,8 +15,8 @@ import javax.ws.rs.core.UriInfo;
 
 import org.apache.log4j.Logger;
 
-import com.nihilent.consumer.QueueListener;
-import com.nihilent.sender.MessageSender;
+import com.mycompany.consumer.QueueListener;
+import com.mycompany.sender.MessageSender;
 
 /**
  * Restful web service.

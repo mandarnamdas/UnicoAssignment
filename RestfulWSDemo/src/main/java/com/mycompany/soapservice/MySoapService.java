@@ -1,4 +1,4 @@
-package com.nihilent.soapservice;
+package com.mycompany.soapservice;
 
 import java.math.BigInteger;
 import java.sql.Connection;
@@ -14,7 +14,7 @@ import javax.jws.WebService;
 
 import org.apache.log4j.Logger;
 
-import com.nihilent.consumer.QueueListener;
+import com.mycompany.consumer.QueueListener;
 
 /**
  * Soap Service which calculates GCD of two numbers from queue.

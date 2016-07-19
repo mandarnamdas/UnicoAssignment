@@ -1,4 +1,4 @@
-package com.nihilent.consumer;
+package com.mycompany.consumer;
 
 import java.util.ArrayList;
 import java.util.Enumeration;

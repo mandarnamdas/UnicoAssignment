@@ -1,4 +1,4 @@
-package com.nihilent.webservice;
+package com.mycompany.webservice;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -21,9 +21,9 @@ import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
-import com.nihilent.consumer.QueueListener;
-import com.nihilent.sender.MessageSender;
-import com.nihilent.soapservice.MySoapService;
+import com.mycompany.consumer.QueueListener;
+import com.mycompany.sender.MessageSender;
+import com.mycompany.soapservice.MySoapService;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({ MyWebService.class, MessageSender.class, QueueListener.class, MySoapService.class})
